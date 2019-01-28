@@ -1,5 +1,7 @@
 {
   "name": "CursoSpringIonic",
-  "integrations": {},
-  "type": "angular"
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
 }
