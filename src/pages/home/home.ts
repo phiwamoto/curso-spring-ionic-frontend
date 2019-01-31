@@ -12,4 +12,8 @@ export class HomePage {
 
   }
 
+  login() {
+    // this.navCtrl.push('CategoriasPage'); // PHI: esse método push() ele empilha a página colocando a setinha de voltar
+    this.navCtrl.setRoot('CategoriasPage'); // PHI: esse método setRoot() ele entra na página e demonstra o Botão do Menu
+  }
 }
