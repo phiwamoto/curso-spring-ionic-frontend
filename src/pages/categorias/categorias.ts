@@ -25,16 +25,15 @@ export class CategoriasPage {
   constructor(
     public navCtrl: NavController, 
     public navParams: NavParams,
-    public categoriService: CategoriaService) {
+    public categoriaService: CategoriaService) {
   }
 
   ionViewDidLoad() {
-    this.categoriService.findAll().subscribe(
-      response => {
+    this.categoriaService.findAll()
+      .subscribe(response => {
         this.items = response;
       },
-      error => {}
-    );   
+      error => {});
   }
 
   showProdutos(categoria_id : string) {
